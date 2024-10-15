@@ -7,7 +7,7 @@ import Breadcrum from '../Components/Breadcrums/Breadcrum';
 const Product = () => {
 const{all_product}=useContext(ShopContext);
 const{productId}=useParams();
-const proudct=all_product.find((e)=>e.id === Number (productId))
+const product=all_product.find((e)=>e.id === Number (productId))
  return (
     <div>
       <Breadcrum product={product}/>
