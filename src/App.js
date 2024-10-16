@@ -7,7 +7,7 @@ import Footer from './Components/Footer/Footer';
 import Navbar from './Components/Navbar/Navbar';
 import Cart from './Pages/Cart';
 import LoginSignup from './Pages/LoginSignup';
-import Product from './Pages/Product';
+import Product from './Pages/Product.jsx';
 import Shop from './Pages/Shop';
 import ShopCategory from './Pages/ShopCategory';
 
@@ -22,9 +22,13 @@ function App() {
         <Route path='/mens' element={<ShopCategory banner = {men_banner} category="men"/>}/>
         <Route path='/womens' element={<ShopCategory banner = {women_banner} category="women"/>}/>
         <Route path='/kids' element={<ShopCategory banner = {kids_banner} category="kid"/>}/>
-        <Route path="/product" element={<Product/>}>
+        
           <Route path=':productId' element={<Product/>}/>
-        </Route>
+          <Route path="/product/:productId" element={<Product />} />
+          <Route path="/mens/product/:productId" element={<Product />} />
+          <Route path="/womens/product/:productId" element={<Product />} />
+          <Route path="/kids/product/:productId" element={<Product />} />
+        
         <Route path='/cart' element={<Cart/>}/>
         <Route path='/login' element={<LoginSignup/>}/>
    
