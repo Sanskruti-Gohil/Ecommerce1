@@ -1,15 +1,16 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import kids_banner from './Components/Assets/banner_kids.png';
+import men_banner from './Components/Assets/banner_mens.png';
+import women_banner from './Components/Assets/banner_women.png';
+import Footer from './Components/Footer/Footer';
 import Navbar from './Components/Navbar/Navbar';
-import{BrowserRouter,Routes,Route } from 'react-router-dom';
-import Shop from './Pages/Shop';
-import ShopCategory from './Pages/ShopCategory';
-import Product from './Pages/Product';
 import Cart from './Pages/Cart';
 import LoginSignup from './Pages/LoginSignup';
-import Footer from './Components/Footer/Footer';
-import men_banner from './Components/Assets/banner_mens.png'
-import women_banner from './Components/Assets/banner_women.png'
-import kids_banner from './Components/Assets/banner_kids.png'
+import Product from './Pages/Product';
+import Shop from './Pages/Shop';
+import ShopCategory from './Pages/ShopCategory';
+
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         </Route>
         <Route path='/cart' element={<Cart/>}/>
         <Route path='/login' element={<LoginSignup/>}/>
+   
       </Routes>
       <Footer/>
       </BrowserRouter>

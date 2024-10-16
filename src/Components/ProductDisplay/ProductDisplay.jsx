@@ -1,10 +1,11 @@
-import { default as React } from 'react';
+import React from 'react';
 import star_dull_icon from "../Assets/star_dull_icon.png";
 import star_icon from "../Assets/star_icon.png";
 import './ProductDisplay.css';
 
- const ProductDisplay =(props) => { const {product}=props;
- return(
+ const ProductDisplay =(props) => { 
+    const {product}=props;
+  return(
    <div className='productdisplay'>
        <div className="productdisplay-left">
            <div className='productdisplay-img-list'>
@@ -53,4 +54,4 @@ import './ProductDisplay.css';
 )}
 
 
-export default ProductDisplay
+export default ProductDisplay;
