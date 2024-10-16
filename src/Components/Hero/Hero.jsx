@@ -6,11 +6,11 @@ import hero_image from '../Assets/hero_image.png'
 
 const Hero = () => {
   return (
-    <div classname='Hero'>
+    <div className='Hero'>
         <div className="hero-left">
             <h2>New ARRIVALS ONLY</h2>
             <div>
-                <div classname="hero-hand-icon">
+                <div className="hero-hand-icon">
                     <p>new</p>
                     <img src={hand_icon} alt=""/>
                 </div>
