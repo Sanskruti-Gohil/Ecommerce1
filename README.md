@@ -1,70 +1,181 @@
-# Getting Started with Create React App
+# 🛒 E-Commerce Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### A full-stack e-commerce application built with React, Express, and MongoDB.
 
-## Available Scripts
+This project is a full-stack e-commerce platform that enables users to browse products, create accounts, manage shopping carts, and explore an online shopping experience. It also includes an admin panel for product management, allowing administrators to add, update, and manage products with image uploads.
 
-In the project directory, you can run:
+The application demonstrates the integration of a modern React frontend with an Express.js backend, MongoDB database, and JWT-based user authentication.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ✨ Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 👤 User Features
 
-### `npm test`
+* User Registration & Login
+* JWT Authentication
+* Product Browsing
+* Shopping Cart Management
+* Responsive User Interface
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🛍 Product Management
 
-### `npm run build`
+* View product catalog
+* Category-based products
+* Product images
+* Price management
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 👨‍💼 Admin Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Add new products
+* Upload product images
+* Remove existing products
+* Manage product inventory
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🛠 Tech Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Frontend
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* React
+* React Router
+* CSS
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Backend
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* Node.js
+* Express.js
+* JWT Authentication
+* Multer
 
-## Learn More
+### Database
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* MongoDB
+* Mongoose
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 🏗 System Architecture
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```text
+                Customer
+                    │
+                    ▼
+             React Frontend
+                    │
+              REST API Calls
+                    ▼
+            Express.js Backend
+                    │
+        ┌───────────┴───────────┐
+        ▼                       ▼
+ JWT Authentication        Product APIs
+        │                       │
+        └───────────┬───────────┘
+                    ▼
+               MongoDB Database
+```
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📂 Project Structure
 
-### Making a Progressive Web App
+```text
+Ecommerce1/
+│
+├── src/                 # React Frontend
+├── public/
+├── backend/
+│   ├── index.js
+│   ├── upload/
+│   └── package.json
+│
+├── admin/               # Admin Dashboard
+└── README.md
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 🚀 Getting Started
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Clone the repository
 
-### Deployment
+```bash
+git clone https://github.com/Sanskruti-Gohil/Ecommerce1.git
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+### Install Frontend Dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+npm install
+```
+
+---
+
+### Install Backend Dependencies
+
+```bash
+cd backend
+npm install
+```
+
+---
+
+### Start MongoDB
+
+Ensure MongoDB is running locally.
+
+Default connection:
+
+```text
+mongodb://localhost:27017/Ecommerce
+```
+
+---
+
+### Run the Backend
+
+```bash
+cd backend
+node index.js
+```
+
+Backend runs on:
+
+```text
+http://localhost:4000
+```
+
+---
+
+### Run the Frontend
+
+```bash
+npm start
+```
+
+Frontend runs on:
+
+```text
+http://localhost:3000
+```
+
+---
+
+## 📌 API Highlights
+
+* User Registration
+* User Login
+* Product Upload
+* Product Management
+* Shopping Cart APIs
+* Image Upload using Multer
+
+---
+
+## 💡 Learning Outcomes
+
+Through this project, I gained hands-on experience in building a complete full-stack web application. It strengthened my understanding of RESTful APIs, JWT-based authentication, MongoDB integration, image uploads, and connecting frontend and backend components into a functional e-commerce system.
